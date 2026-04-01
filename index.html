@@ -1,1 +1,59 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Electronics Shop POS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- POS Section -->
+    <section class="pos">
+      <h2>ELECTRONICS SHOP POS</h2>
+      <p>Welcome</p>
+      <div class="products">
+        <button onclick="addToCart('Samsung Phone', 25000)">Samsung Phone - KES 25,000</button>
+        <button onclick="addToCart('LG TV', 45000)">LG TV - KES 45,000</button>
+        <button onclick="addToCart('HP Laptop', 55000)">HP Laptop - KES 55,000</button>
+        <button onclick="addToCart('Headphones', 3000)">Headphones - KES 3,000</button>
+        <button onclick="addToCart('Digital Camera', 20000)">Digital Camera - KES 20,000</button>
+        <button onclick="addToCart('USB Charger', 500)">USB Charger - KES 500</button>
+      </div>
+      <div class="cart">
+        <h3>Cart</h3>
+        <ul id="cart-list"></ul>
+        <p id="total">Total: KES 0</p>
+        <button onclick="checkout('Cash')">Cash Payment</button>
+        <button onclick="checkout('M-Pesa')">M-Pesa Payment</button>
+      </div>
+    </section>
+
+    <!-- Inventory Section -->
+    <section class="inventory">
+      <h2>Inventory Management</h2>
+      <table>
+        <tr><th>Item</th><th>Category</th><th>Stock</th><th>Price</th></tr>
+        <tr><td>Samsung Phone</td><td>Mobile</td><td>12</td><td>KES 25,000</td></tr>
+        <tr><td>LG TV</td><td>Television</td><td>5</td><td>KES 45,000</td></tr>
+        <tr><td>HP Laptop</td><td>Laptops</td><td>8</td><td>KES 55,000</td></tr>
+        <tr><td>USB Charger</td><td>Accessories</td><td>2 (Low Stock)</td><td>KES 500</td></tr>
+      </table>
+    </section>
+
+    <!-- Reports Section -->
+    <section class="reports">
+      <h2>Sales Reports</h2>
+      <p>Daily Sales: KES 55,000</p>
+      <h3>Top Selling Products:</h3>
+      <ul>
+        <li>Samsung Phone — 10 Sold</li>
+        <li>USB Charger — 15 Sold</li>
+      </ul>
+    </section>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
